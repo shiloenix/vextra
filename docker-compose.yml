@@ -2,7 +2,6 @@ services:
   server:
     build: ./server
     container_name: api
-    env_file: ./server/.env
     ports:
       - "39101:39101"
     volumes:
@@ -18,7 +17,6 @@ services:
         - VITE_API_URL=35179
         - VITE_PORT=39101
     container_name: ui
-    env_file: ./client/.env
     ports:
       - "35179:35179"
     volumes:
