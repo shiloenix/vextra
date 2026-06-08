@@ -69,12 +69,13 @@ Required: `python3`, `ffmpeg`, `yt-dlp`, `docker`, `docker-compose`, `node`, `np
 
 ## Getting started
 
+---
 ### Automatic (recommended)
 
 The setup script detects your OS, installs all dependencies, and launches VIDOE in one command:
 
 ```bash
-git clone https://github.com/yourname/vidoe.git
+git clone https://github.com/shiloenix/vidoe.git
 cd vidoe
 chmod +x install.sh
 ./install.sh
