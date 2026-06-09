@@ -1,18 +1,18 @@
-# VIDOE
+# VIDO
 
-**Multi-source Video Extractionz System — free, open source, containerized, no ads.**
+**Multi-source Video Extraction System — free, open source, containerized, no ads.**
 
-VIDOE is a self-hosted video downloader built on [yt-dlp](https://github.com/yt-dlp/yt-dlp), wrapped in a clean terminal-aesthetic UI. Paste a link, pick a format, download. No accounts, no tracking, no ads, no limits.
+VIDO is a self-hosted video downloader built on [yt-dlp](https://github.com/yt-dlp/yt-dlp), wrapped in a clean terminal-aesthetic UI. Paste a link, pick a format, download. No accounts, no tracking, no ads, no limits.
 
 ---
 
 ## Features
 
 ### Multi-source support
-Download from 1800+ supported sites including YouTube, Twitter/X, Facebook, Instagram, TikTok, Vimeo, Twitch, SoundCloud, and many more — anything yt-dlp supports, VIDOE supports.
+Download from 1800+ supported sites including YouTube, Twitter/X, Facebook, Instagram, TikTok, Vimeo, Twitch, SoundCloud, and many more — anything yt-dlp supports, VIDO supports.
 
 ### Format selection
-Before downloading, VIDOE fetches all available formats for the video and lets you choose exactly what you want — resolution, codec, file size. No blind downloading.
+Before downloading, VIDO fetches all available formats for the video and lets you choose exactly what you want — resolution, codec, file size. No blind downloading.
 
 ### Video quality options
 Choose from all available resolutions: 144p up to 8K, organized and deduplicated so you always see the best stream per quality tier.
@@ -30,10 +30,10 @@ Pause the progress display at any time and resume without losing state. Cancel t
 Every completed download is logged locally with title, thumbnail, format, and timestamp. Search, browse, and manage your history — or clear it all at once.
 
 ### No ads, no telemetry
-VIDOE collects nothing. No analytics, no tracking, no third-party scripts. Your downloads stay between you and your machine.
+VIDO collects nothing. No analytics, no tracking, no third-party scripts. Your downloads stay between you and your machine.
 
 ### Docker containerized
-VIDOE ships as a Docker Compose stack. One command and it's running — no Node or Python setup required on the host.
+VIDO ships as a Docker Compose stack. One command and it's running — no Node or Python setup required on the host.
 
 ### Self-hosted
 You own the server. Downloads go straight to your machine's `~/Downloads` folder. Nothing passes through any third-party service.
@@ -54,7 +54,7 @@ You own the server. Downloads go straight to your machine's `~/Downloads` folder
 
 ## Prerequisites
 
-Before running VIDOE, install the required system dependencies for your OS. A setup script is provided that detects your OS and installs everything automatically.
+Before running VIDO, install the required system dependencies for your OS. A setup script is provided that detects your OS and installs everything automatically.
 
 | OS | Manual deps file |
 |---|---|
@@ -72,11 +72,11 @@ Required: `python3`, `ffmpeg`, `yt-dlp`, `docker`, `docker-compose`, `node`, `np
 ---
 ### Automatic (recommended)
 
-The setup script detects your OS, installs all dependencies, and launches VIDOE in one command:
+The setup script detects your OS, installs all dependencies, and launches VIDO in one command:
 
 ```bash
-git clone https://github.com/shiloenix/vidoe.git
-cd vidoe
+git clone https://github.com/shiloenix/vido.git
+cd vido
 chmod +x install.sh
 ./install.sh
 ```
@@ -95,7 +95,7 @@ If you already have all dependencies installed:
 
 ```bash
 # Terminal 1 — backend
-cd vidoe
+cd vido
 npm install 
 npm run dev
 ```
@@ -121,7 +121,7 @@ docker compose up --build
 ## Usage
 
 1. Paste a video URL into the input field
-2. Click **Scan** — VIDOE fetches all available formats
+2. Click **Scan** — VIDO fetches all available formats
 3. Select a video resolution or audio format from the list
 4. Click **Download**
 5. Watch the real-time progress bar — speed and ETA update live
