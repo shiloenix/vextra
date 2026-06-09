@@ -56,12 +56,12 @@ You own the server. Downloads go straight to your machine's `~/Downloads` folder
 
 Before running VIDO, install the required system dependencies for your OS. A setup script is provided that detects your OS and installs everything automatically.
 
-| OS | Manual deps file |
+| OS | Manual dependencies file |
 |---|---|
-| Arch Linux | `deps/arch.txt` |
-| Debian | `deps/debian.txt` |
-| Ubuntu | `deps/ubuntu.txt` |
-| Fedora | `deps/fedora.txt` |
+| Arch Linux | `packages/arch.txt` |
+| Debian | `packages/debian.txt` |
+| Ubuntu | `packages/ubuntu.txt` |
+| Fedora | `packages/fedora.txt` |
 
 Required: `python3`, `ffmpeg`, `yt-dlp`, `docker`, `docker-compose`, `node`, `npm`
 
@@ -90,7 +90,7 @@ If you already have all dependencies installed:
 ```bash
 ./install.sh --skip-deps
 ```
-
+deps
 ### Manual setup without Docker
 
 ```bash
