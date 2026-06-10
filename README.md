@@ -23,9 +23,6 @@ Download audio-only formats in their native codec (AAC, Opus, etc.) or convert d
 ### Real-time progress
 A live progress bar shows download percentage, transfer speed, and ETA as the download happens — streamed in real time via SSE (Server-Sent Events).
 
-### Pause & resume
-Pause the progress display at any time and resume without losing state. Cancel the download entirely and kill the underlying process cleanly.
-
 ### Download history
 Every completed download is logged locally with title, thumbnail, format, and timestamp. Search, browse, and manage your history — or clear it all at once.
 
@@ -90,7 +87,6 @@ If you already have all dependencies installed:
 ```bash
 ./install.sh --skip-deps
 ```
-deps
 ### Manual setup without Docker
 
 ```bash
@@ -130,18 +126,10 @@ To pause a download click **Pause** in the progress bar. To cancel it entirely c
 
 ---
 
-## Supported sites (sample)
-
-YouTube · Twitter/X · Facebook · Instagram · TikTok · Vimeo · Twitch · SoundCloud · Dailymotion · Reddit · Bilibili · Rumble · and 1800+ more via yt-dlp
-
-Full list: [yt-dlp supported sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
-
----
-
 ## Troubleshooting
 
 **Transfer failed immediately**
-Make sure `yt-dlp` and `ffmpeg` are installed on the host machine. Docker does not bundle them — see `deps/` for your OS.
+Make sure `yt-dlp` and `ffmpeg` are installed on the host machine. Docker does not bundle them — see `packages/` for your OS.
 
 **Progress bar doesn't update in real time**
 Make sure nothing is proxying or buffering the response between the server and browser (e.g. nginx without `proxy_buffering off`).
